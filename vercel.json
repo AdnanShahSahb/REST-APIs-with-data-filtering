@@ -1,15 +1,13 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "./app.js",
-            "use": "@vercel/node"
-        }
+      { "src": "app.js", "use": "@vercel/node" }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-    ]
-}
+      { "src": "/(.*)", "dest": "/app.js" }
+    ],
+    "env": {
+      "MONGODB_URL": "mongodb+srv://aadnanshahh2001:mongoING123@cluster0.xc00x1w.mongodb.net/?retryWrites=true&w=majority"
+    }
+  }
+  
